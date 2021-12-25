@@ -6,7 +6,7 @@ import Home from './components/screens/Home';
 import Signup from './components/screens/Signup';
 import Profile from './components/screens/Profile';
 import SignIn from './components/screens/SignIn';
-
+import CreatePost from './components/screens/CreatePost';
 
 function App(){
   return(
@@ -24,6 +24,9 @@ function App(){
       </Route>
 
       <Route path ="/profile" element={<Profile/>}>
+      </Route>
+
+      <Route path ="/create" element={<CreatePost/>}>
       </Route>
     </Routes>
 
