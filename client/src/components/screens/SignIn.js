@@ -32,9 +32,9 @@ const SignIn = ()=>{
             else{
                 localStorage.setItem("jwt", data.token)
                 localStorage.setItem("user", JSON.stringify(data.user))
+                navigate('/')
                 dispatch({type:"USER", payload:data.user})
                 M.toast({html:"signedin success" , classes: "#2e7d32 green darken-3"})
-                navigate('/')
             }
         }).catch(err=>{
             console.log(err)
